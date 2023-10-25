@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentList">
+    <fragment
+        android:id="@+id/fragmentList"
+        android:name="com.example.noterecognition.screens.zoya.list.FragmentList"
+        android:label="FragmentList" >
+        <action
+            android:id="@+id/action_fragmentList_to_fragmentProject"
+            app:destination="@id/fragmentProject" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFourCourse"
+        android:name="com.example.noterecognition.screens.fourCourse.FragmentFourCourse"
+        android:label="FragmentFourCourse" />
+    <fragment
+        android:id="@+id/fragmentPhoto"
+        android:name="com.example.noterecognition.screens.zoya.photo.FragmentPhoto"
+        android:label="FragmentPhoto" >
+        <action
+            android:id="@+id/action_fragmentPhoto_to_fragmentView"
+            app:destination="@id/fragmentView" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentRecognitions"
+        android:name="com.example.noterecognition.screens.nataly.recognitions.FragmentRecognitions"
+        android:label="FragmentRecognitions" />
+    <fragment
+        android:id="@+id/fragmentOptionRun"
+        android:name="com.example.noterecognition.screens.nataly.optionRun.FragmentOptionRun"
+        android:label="FragmentOptionRun" >
+        <action
+            android:id="@+id/action_fragmentOptionRun_to_fragmentRun"
+            app:destination="@id/fragmentRun" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentProject"
+        android:name="com.example.noterecognition.screens.zoya.project.FragmentProject"
+        android:label="FragmentProject" >
+        <action
+            android:id="@+id/action_fragmentProject_to_fragmentFourCourse"
+            app:destination="@id/fragmentFourCourse" />
+        <action
+            android:id="@+id/action_fragmentProject_to_fragmentRecognitions"
+            app:destination="@id/fragmentRecognitions" />
+        <action
+            android:id="@+id/action_fragmentProject_to_fragmentOptionRun"
+            app:destination="@id/fragmentOptionRun" />
+        <action
+            android:id="@+id/action_fragmentProject_to_fragmentPhoto"
+            app:destination="@id/fragmentPhoto" />
+        <action
+            android:id="@+id/action_fragmentProject_to_fragmentView"
+            app:destination="@id/fragmentView" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentRun"
+        android:name="com.example.noterecognition.screens.nataly.run.FragmentRun"
+        android:label="FragmentRun" />
+    <fragment
+        android:id="@+id/fragmentView"
+        android:name="com.example.noterecognition.screens.nataly.view.FragmentView"
+        android:label="FragmentView" />
+</navigation>
