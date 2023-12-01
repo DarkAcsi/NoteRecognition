@@ -19,13 +19,15 @@ class FragmentList : BaseFragment(R.layout.z_fragment_list) {
         super.onViewCreated(view, savedInstanceState)
         binding = ZFragmentListBinding.bind(view)
 
-        binding.btnNext.setOnClickListener {
-            val direction =
-                FragmentListDirections.actionFragmentListToFragmentProject()
-            navigator().navigateTo(direction)
-        }
         binding.btnBack.setOnClickListener { navigator().navigateUp() }
+        binding.btnNext.setOnClickListener { toProject() }
 
+    }
+
+    private fun toProject() {
+        val direction =
+            FragmentListDirections.actionFragmentListToFragmentProject()
+        navigator().navigateTo(direction)
     }
 
 }

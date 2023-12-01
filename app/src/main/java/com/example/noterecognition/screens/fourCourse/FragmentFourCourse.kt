@@ -7,6 +7,7 @@ import com.example.noterecognition.R
 import com.example.noterecognition.base.BaseFragment
 import com.example.noterecognition.base.BaseViewModel
 import com.example.noterecognition.databinding.FragmentFourCourseBinding
+import com.example.noterecognition.navigator
 
 class FragmentFourCourse : BaseFragment(R.layout._fragment_four_course) {
 
@@ -18,7 +19,7 @@ class FragmentFourCourse : BaseFragment(R.layout._fragment_four_course) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentFourCourseBinding.bind(view)
 
-        binding.btnBack.setOnClickListener { requireActivity().onNavigateUp() }
+        binding.btnBack.setOnClickListener { navigator().navigateUp() }
 
     }
 

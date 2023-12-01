@@ -7,6 +7,7 @@ import com.example.noterecognition.R
 import com.example.noterecognition.base.BaseFragment
 import com.example.noterecognition.base.BaseViewModel
 import com.example.noterecognition.databinding.NFragmentOptionRunBinding
+import com.example.noterecognition.navigator
 
 class FragmentOptionRun : BaseFragment(R.layout.n_fragment_option_run) {
 
@@ -18,6 +19,15 @@ class FragmentOptionRun : BaseFragment(R.layout.n_fragment_option_run) {
         super.onViewCreated(view, savedInstanceState)
         binding = NFragmentOptionRunBinding.bind(view)
 
+        binding.btnBack.setOnClickListener{ navigator().navigateUp() }
+        binding.btnNext.setOnClickListener { toRun() }
+
+    }
+
+    private fun toRun() {
+        val direction =
+            FragmentOptionRunDirections.actionFragmentOptionRunToFragmentRun()
+        navigator().navigateTo(direction)
     }
 
 }

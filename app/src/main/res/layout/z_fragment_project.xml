@@ -5,6 +5,16 @@
     android:layout_height="match_parent">
 
     <Button
+        android:id="@+id/btnNext5"
+        android:layout_width="223dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="44dp"
+        android:text="To option run"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
         android:id="@+id/btnNext4"
         android:layout_width="223dp"
         android:layout_height="71dp"
@@ -29,7 +39,7 @@
         android:layout_width="223dp"
         android:layout_height="71dp"
         android:layout_marginBottom="44dp"
-        android:text="To run"
+        android:text="To recognitions"
         app:layout_constraintBottom_toTopOf="@+id/btnNext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

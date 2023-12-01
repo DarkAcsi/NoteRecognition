@@ -7,6 +7,7 @@ import com.example.noterecognition.R
 import com.example.noterecognition.base.BaseFragment
 import com.example.noterecognition.base.BaseViewModel
 import com.example.noterecognition.databinding.NFragmentViewBinding
+import com.example.noterecognition.navigator
 
 class FragmentView : BaseFragment(R.layout.n_fragment_view) {
 
@@ -17,6 +18,8 @@ class FragmentView : BaseFragment(R.layout.n_fragment_view) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = NFragmentViewBinding.bind(view)
+
+        binding.btnBack.setOnClickListener { navigator().navigateUp() }
 
     }
 
