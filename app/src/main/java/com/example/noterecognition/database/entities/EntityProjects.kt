@@ -8,28 +8,18 @@ import androidx.room.PrimaryKey
 @Entity(
     tableName = "projects",
     indices = [Index(value = ["name"], unique = true)],
-    foreignKeys = [
-        ForeignKey(
-            entity = EntityProjectsSettings::class,
-            parentColumns = ["id"],
-            childColumns = ["project_id"]
-        ),
-        ForeignKey(
-            entity = EntitySimpleMode::class,
-            parentColumns = ["id"],
-            childColumns = ["project_id"]
-        ),
-        ForeignKey(
-            entity = EntityImages::class,
-            parentColumns = ["id"],
-            childColumns = ["project_id"]
-        ),
-        ForeignKey(
-            entity = EntityRecognitions::class,
-            parentColumns = ["id"],
-            childColumns = ["project_id"]
-        ),
-    ]
+//    foreignKeys = [
+//        ForeignKey(
+//            entity = EntityImages::class,
+//            parentColumns = ["project_id"],
+//            childColumns = ["id"]
+//        ),
+//        ForeignKey(
+//            entity = EntityRecognitions::class,
+//            parentColumns = ["project_id"],
+//            childColumns = ["id"]
+//        ),
+//    ]
 )
 data class EntityProjects(
     @PrimaryKey(autoGenerate = true) val id: Long = 0,

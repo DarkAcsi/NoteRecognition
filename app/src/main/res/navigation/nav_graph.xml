@@ -5,7 +5,7 @@
     app:startDestination="@id/fragmentList">
     <fragment
         android:id="@+id/fragmentList"
-        android:name="com.example.noterecognition.screens.zoya.list.FragmentList"
+        android:name="com.example.noterecognition.screens.nataly.list.FragmentList"
         android:label="FragmentList" >
         <action
             android:id="@+id/action_fragmentList_to_fragmentProject"

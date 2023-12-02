@@ -2,10 +2,18 @@ package com.example.noterecognition.database.entities
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
+import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
 
 @Entity(
     tableName = "simple_mode",
+        foreignKeys = [
+            ForeignKey(
+                entity = EntityProjects::class,
+                parentColumns = ["id"],
+                childColumns = ["project_id"]
+            ),
+    ]
 )
 data class EntitySimpleMode(
     @PrimaryKey(autoGenerate = true) val id: Long = 0,

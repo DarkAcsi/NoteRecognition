@@ -8,7 +8,6 @@ import com.example.noterecognition.base.BaseFragment
 import com.example.noterecognition.base.BaseViewModel
 import com.example.noterecognition.databinding.ZFragmentProjectBinding
 import com.example.noterecognition.navigator
-import com.example.noterecognition.screens.zoya.list.FragmentListDirections
 
 class FragmentProject : BaseFragment(R.layout.z_fragment_project) {
 

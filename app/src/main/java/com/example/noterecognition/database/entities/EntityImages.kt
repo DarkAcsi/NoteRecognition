@@ -11,9 +11,9 @@ import androidx.room.PrimaryKey
     indices = [Index(value = ["project_id"])],
     foreignKeys = [
         ForeignKey(
-            entity = EntityImagesSettings::class,
+            entity = EntityProjects::class,
             parentColumns = ["id"],
-            childColumns = ["id"]
+            childColumns = ["project_id"]
         ),
     ]
 )

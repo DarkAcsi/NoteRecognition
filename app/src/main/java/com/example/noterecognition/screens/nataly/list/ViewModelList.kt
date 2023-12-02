@@ -1,4 +1,4 @@
-package com.example.noterecognition.screens.zoya.list
+package com.example.noterecognition.screens.nataly.list
 
 import com.example.noterecognition.base.BaseViewModel
 
