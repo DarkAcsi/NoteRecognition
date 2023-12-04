@@ -27,7 +27,7 @@
         android:contentDescription="Check all"/>
 
     <TextView
-        android:id="@+id/tvNameAccount"
+        android:id="@+id/tvCountChecked"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center_vertical"
